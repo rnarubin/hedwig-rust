@@ -12,6 +12,9 @@ use std::{
     task::{Context, Poll},
 };
 
+mod consumers;
+pub use consumers::*;
+
 /// Message consumers ingest messages from a queue service and present them to the user application
 /// as a [`Stream`](futures_util::stream::Stream).
 ///

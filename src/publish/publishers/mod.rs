@@ -7,7 +7,9 @@ mod null;
 #[allow(unreachable_pub)]
 pub use null::*;
 
+#[cfg(feature = "mock")]
 mod mock;
+#[cfg(feature = "mock")]
 #[allow(unreachable_pub)]
 pub use mock::*;
 
